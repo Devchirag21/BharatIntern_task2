@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperture converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6c9f82a70c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   <div class="container">
+    <div class="temperature_converter">
+        <div class="moblie">
+            <p>9.30 AM</p>
+            <div>
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-three-quarters"></i>
+            </div>
+        </div>
+        <h2 class="title">Temperature Converter</h2>
+
+        <div class="result">
+            <span class="result_heading">Result (Celsius)</span>
+            <h2 class="celsius_value" id="celsius">1</h2>
+        </div>
+        <div class="degree_type">
+
+            <div class="degree_feild">
+                <label for="degree">Degree</label>
+                <input type="number" name="degree" id="degree">
+            </div>
+            <div class="temp_field">
+                <label for="temp_type">type</label>
+                <select name="tempertures" id="temp_type" autocomplete="on">
+                    <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
+                    <option value="kelvin" id="kelvin">kelvin</option>
+                </select>
+                
+            </div>
+        </div>
+        <button id="convert_btn">Convert</button>
+    </div>
+   </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
